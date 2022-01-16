@@ -8,7 +8,7 @@
 {{ $firstBracket := "\\[\\[" }}
 {{ $lastBracket := "\\]\\]" }}
 
-{{ $wikiregex := "\\[\\[(.+)\\]\\]" }}
+{{ $wikiregex := "\\[\\[(.+?)\\]\\]" }}
 
 {{ $wikilinks := .Content | findRE $wikiregex }}
 
