@@ -1,4 +1,3 @@
-
 input {
 	margin: 0;
 	padding: 0;
@@ -6,32 +5,113 @@ input {
 	font: inherit;
 	color: inherit;
 	font-size: 100%;
-	vertical-align: baseline	
+	vertical-align: baseline
 }
 
 *:focus {
 	outline: none;
 }
-	
+
 textarea,
 input[type="search"],
 input[type="text"],
 input[type="button"],
 input[type="submit"] {
-	 -webkit-appearance: none;
-	 border-radius: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
 }
+
 // @todo: class
 
 ::selection {
-	  background: var(--selected-text-background-color);
-	}
+	background: var(--selected-text-background-color);
+}
 
 /** 
 	Bear base styles
 	(Retrieved from official app, all credits belong to Bear Team)
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -44,7 +124,8 @@ html {
 	line-height: 1
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none
 }
 
@@ -53,17 +134,23 @@ table {
 	border-spacing: 0
 }
 
-caption, th, td {
+caption,
+th,
+td {
 	text-align: left;
 	font-weight: normal;
 	vertical-align: middle
 }
 
-q, blockquote {
+q,
+blockquote {
 	quotes: none
 }
 
-q:before, q:after, blockquote:before, blockquote:after {
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
 	content: "";
 	content: none
 }
@@ -71,7 +158,20 @@ q:before, q:after, blockquote:before, blockquote:after {
 a img {
 	border: none
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
 	display: block
 }
 
@@ -97,7 +197,7 @@ body {
 	// @todo: not working
 	color: var(--text-base-color);
 	text-rendering: optimizeLegibility;
-	font-family: "AvenirNext-Regular"
+	font-family: "Helvetica"
 }
 
 a {
@@ -141,11 +241,15 @@ hr {
 	margin: -1px auto 1.57143em auto
 }
 
-ul, ol {
+ul,
+ol {
 	margin-bottom: .31429em;
 }
 
-ul ul, ul ol, ol ul, ol ol {
+ul ul,
+ul ol,
+ol ul,
+ol ol {
 	margin-bottom: 0px
 }
 
@@ -163,11 +267,13 @@ ol li:before {
 	margin-right: 0.5em
 }
 
-b, strong {
+b,
+strong {
 	font-family: "AvenirNext-Bold"
 }
 
-i, em {
+i,
+em {
 	font-family: "AvenirNext-Italic"
 }
 
@@ -181,27 +287,53 @@ code {
 	white-space: nowrap
 }
 
-.sf_code_string, .sf_code_selector, .sf_code_attr-name, .sf_code_char, .sf_code_builtin, .sf_code_inserted {
+.sf_code_string,
+.sf_code_selector,
+.sf_code_attr-name,
+.sf_code_char,
+.sf_code_builtin,
+.sf_code_inserted {
 	color: #D33905
 }
 
-.sf_code_comment, .sf_code_prolog, .sf_code_doctype, .sf_code_cdata {
+.sf_code_comment,
+.sf_code_prolog,
+.sf_code_doctype,
+.sf_code_cdata {
 	color: #838383
 }
 
-.sf_code_number, .sf_code_boolean {
+.sf_code_number,
+.sf_code_boolean {
 	color: #0E73A2
 }
 
-.sf_code_keyword, .sf_code_atrule, .sf_code_rule, .sf_code_attr-value, .sf_code_function, .sf_code_class-name, .sf_code_class, .sf_code_regex, .sf_code_important, .sf_code_variable, .sf_code_interpolation {
+.sf_code_keyword,
+.sf_code_atrule,
+.sf_code_rule,
+.sf_code_attr-value,
+.sf_code_function,
+.sf_code_class-name,
+.sf_code_class,
+.sf_code_regex,
+.sf_code_important,
+.sf_code_variable,
+.sf_code_interpolation {
 	color: #0E73A2
 }
 
-.sf_code_property, .sf_code_tag, .sf_code_constant, .sf_code_symbol, .sf_code_deleted {
+.sf_code_property,
+.sf_code_tag,
+.sf_code_constant,
+.sf_code_symbol,
+.sf_code_deleted {
 	color: #1B00CE
 }
 
-.sf_code_macro, .sf_code_entity, .sf_code_operator, .sf_code_url {
+.sf_code_macro,
+.sf_code_entity,
+.sf_code_operator,
+.sf_code_url {
 	color: #920448
 }
 
@@ -217,7 +349,7 @@ code {
 
 u {
 	text-decoration: none;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%,var(--accent-text-color) 50%);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, var(--accent-text-color) 50%);
 	background-repeat: repeat-x;
 	background-size: 2px 2px;
 	background-position: 0 1.05em
@@ -335,7 +467,7 @@ blockquote {
 
 .address a {
 	color: #545454;
-	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%,#0da35e 50%);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #0da35e 50%);
 	background-repeat: repeat-x;
 	background-size: 2px 2px;
 	background-position: 0 1.05em
@@ -352,7 +484,7 @@ blockquote {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
-	border: solid 1px rgba(0,0,0,0.3);
+	border: solid 1px rgba(0, 0, 0, 0.3);
 	border-radius: 50%;
 	margin-right: 0.1em;
 	position: relative;
@@ -411,7 +543,7 @@ img {
 
 // Hugo renders footnotes with <p> tags nested inside <li>
 // This is need to prevent <p> breaking lines
-li > p {
+li>p {
 	display: inline-block;
 	margin-left: 16px;
 }
@@ -430,25 +562,30 @@ h4 {
 	margin-bottom: .47143em
 }
 
-* + p,
-* + ul,
-* + ol,
-* + blockquote {
+*+p,
+*+ul,
+*+ol,
+*+blockquote {
 	margin-top: 1.6em;
 }
 
-svg + ul,
-svg + ol {
+svg+ul,
+svg+ol {
 	margin-top: 0;
 }
 
-* + h2,
-* + h3,
-* + h4 {
+*+h2,
+*+h3,
+*+h4 {
 	margin-top: 2.8em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	position: relative;
 }
 
@@ -507,9 +644,10 @@ h6:before {
 	content: "#"
 }
 
-* + table {
+*+table {
 	margin-top: 12px;
 }
+
 table {
 	border-radius: 4px;
 	border: 1px solid var(--separator-color);
